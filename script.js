@@ -51,3 +51,52 @@ function updateCountdown() {
     time--;
 }
 
+
+
+// phone input
+
+document.addEventListener("DOMContentLoaded", function(){
+    let phoneInputs = document.querySelectorAll('input[data-tel-input]');
+
+    let getInputNumbersValue = function(input){
+        return input.value.replace(/\D/g, "");
+    }
+
+
+    let onPhoneInput =  function(e){
+        input = e.target,
+        inputNumbersValue = getInputNumbersValue(input);
+        formatedInputValue = "";
+        if(!inputNumbersValue){
+            return input.value = "";
+        }
+        if(["7","8","9"].indexOf(inputNumbersValue[0])> -1){
+            if(inputNumbersValue[0] == "9"){
+                inputNumbersValue = "7" + inputNumbersValue
+            }
+            let firstSymbols = (inputNumbersValue[0] == "8") ? "8" : "+7";
+            formatedInputValue = firstSymbols + " ";
+            if(inputNumbersValue.length > 1){
+                formatedInputValue += "(" + inputNumbersValue.substring(1,4);
+            }
+            if(inputNumbersValue.length >=5){
+                formatedInputValue += ") " +inputNumbersValue.substring(4,7);
+            }
+            if (inputNumbersValue.length >= 8) {
+                formatedInputValue += '-' + inputNumbersValue.substring(7, 9);
+            }
+            if (inputNumbersValue.length >= 10) {
+                formatedInputValue += '-' + inputNumbersValue.substring(9, 11);
+            }
+        }
+        else{
+            alert("Введите код формата РФ")
+        }
+        input.value = formatedInputValue
+    }
+
+    for(i= 0;i<phoneInputs.length;i++){
+        let input = phoneInputs[i];
+        input.addEventListener("input",onPhoneInput)
+    }
+})

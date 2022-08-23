@@ -246,19 +246,34 @@ button:hover .product_charact{
     background-color: #74c3ba;
     height: 100vh;
 }
-.charact_wrapper1{
+.charact_wrapper{
     display: flex;
     flex-direction: column;
     gap: 30px;
     margin-right: 40px;
-}
-.charact_wrapper2{
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
     margin-left: 40px;
 }
 
+.composition_charact:hover{
+    transform: scale(1.2);
+}
+
+.composition_button{
+    transition: 0.3s;
+     border: 2px solid white;
+    padding:15px 65px;
+    border-radius: 999px;
+     color: #fff;
+     background-color: var(--main-color) ;
+     font-weight: 600;
+     font-size: 20px;
+ }
+ .composition_button:hover{
+ 
+     border: 3px solid var(--main-color);
+     background-color: #fff;
+     color: var(--main-text);
+ }
 .composition_wrapper{
     
     justify-content: center;
@@ -271,14 +286,13 @@ text-align: center;
 filter: brightness(0.7);
 }
 .composition_charact{
+    transition: 0.4s;
     width: 100px;
     height: 100px;
     background-color: #fff;
 }
 
-.composition_img:hover + .charact_wrapper{
-        
-    }
+
 
 /* Rewives */
 .reviews{
@@ -434,6 +448,9 @@ text-align: center;
     .contact_info{
         color: var(--main-text);
         margin-bottom: 50px;
+    }
+    #form_input2:invalid{
+        border: 10px solid red;
     }
     .form_input{
         padding-top: 17px;

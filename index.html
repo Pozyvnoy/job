@@ -100,36 +100,41 @@
         <video class="product_video" src="/img/bgc_pharm.mp4" autoplay muted loop></video>
     </section>
     <section class="composition" id="composition">
-        <div class="section_heading">
-            <div class="section_name">
-                Состав продукта
-            </div>
-        </div>
-        <div class="composition_wrapper">
-            <div class="charact_wrapper1">
-                <div class="composition_charact">
-                    asdasdsadas
-                </div>
-                <div class="composition_charact">
-                    asdasdsadas
-                </div>
-                <div class="composition_charact">
-                    asdasdsadas
+        <div class="container">
+            <div class="section_heading">
+                <div class="section_name">
+                    Состав продукта
                 </div>
             </div>
+
+            <div class="composition_wrapper">
+                <div class="charact_wrapper">
+                    <div class="composition_charact">
+                        asdasdsadas
+                    </div>
+                    <div class="composition_charact">
+                        asdasdsadas
+                    </div>
+                    <div class="composition_charact">
+                        asdasdsadas
+                    </div>
+                </div>
                 <img src="./img/prod.png" alt="" class="composition_img">
 
-            <div class="charact_wrapper2">
-                <div class="composition_charact">
-                    asdasdsadas
+                <div class="charact_wrapper">
+                    <div class="composition_charact">
+                        asdasdsadas
+                    </div>
+                    <div class="composition_charact">
+                        asdasdsadas
+                    </div>
+                    <div class="composition_charact">
+                        asdasdsadas
+                    </div>
                 </div>
-                <div class="composition_charact">
-                    asdasdsadas
-                </div>
-                <div class="composition_charact">
-                    asdasdsadas
-                </div>
+
             </div>
+            <a class="composition_button" href="#order">Заказать</a>
         </div>
     </section>
     <section class="reviews" id="reviews">
@@ -220,8 +225,7 @@
 
                 <div class="form_wrap">
                     <input class="form_input" id="form_input1" type="text" placeholder="Имя">
-                    <input class="form_input" id="form_input2" type="tel" id="phone" placeholder="Номер телефона"
-                        name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+                    <input class="form_input" id="form_input2" type="tel" data-tel-input placeholder="Телефон" maxlength="18">
                     <button id="submit_button" type="submit">Заказать сейчас!</button>
                 </div>
 
