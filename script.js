@@ -100,3 +100,14 @@ document.addEventListener("DOMContentLoaded", function(){
         input.addEventListener("input",onPhoneInput)
     }
 })
+
+// paralax
+
+let chat = document.getElementById("chat")
+window.addEventListener('scroll',function(){
+    let value = this.window.scrollY;
+
+    chat.style.right = value *0.3 + 'px';
+ 
+    
+})

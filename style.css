@@ -259,6 +259,8 @@ button:hover .product_charact{
 }
 
 .composition_button{
+    position: absolute;
+    transform: translateY(30px) translateX(610px);
     transition: 0.3s;
      border: 2px solid white;
     padding:15px 65px;
@@ -281,7 +283,10 @@ button:hover .product_charact{
     flex-direction: row;
 text-align: center;
 }
-
+.composition_img{
+    position: relative;
+    transition: 0.3s;
+}
 .composition_img:hover{
 filter: brightness(0.7);
 }
@@ -296,6 +301,7 @@ filter: brightness(0.7);
 
 /* Rewives */
 .reviews{
+    position: relative;
     height: 120vh;
     background-color: #e4fdf9;
 }
@@ -306,7 +312,14 @@ filter: brightness(0.7);
     height: 150px;
     background: linear-gradient(180deg, rgba(116,195,186,1) 0%, rgba(228,253,249,1) 50%);
 }
+#chat{  
+    width: 30%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translateY(700px) translateX(-300px) rotate(10deg);
 
+}
 .reviews_blog_text{
     width: 650px;
     background-color: #fff;
