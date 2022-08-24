@@ -112,6 +112,6 @@ navBurger.addEventListener('click',function(){
     navList.classList.toggle('active')
 
 })
-window.addEventListener('scroll' ,function(){
-    navList.classList.remove('active')
+window.addEventListener('touchmove' ,function(){
+    navList.classList.add('active')
 })
