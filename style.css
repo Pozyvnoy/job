@@ -624,20 +624,17 @@ text-align: center;
             width: 20px;
         margin-right: 10px;
         }
-        .nav_burger:hover , .nav_burger:active{
-            background-color: transparent ;
-        }
+       
         .nav_list{
-            transition: 0.5s;
-            max-width: 0;
-            height: 100%;
-            overflow: hidden;
+            transition: 0.5s; 
             background-color:white;
             text-align: center;
-            margin: 0 auto  ;
             top: 80px;
+            left: 0 ;
+            right: 0;
+            bottom: 0;
         display: flex;
-            right: 0px;
+        z-index: 100;
             flex-direction: column;
             position: absolute ;
     
@@ -646,12 +643,10 @@ text-align: center;
             font-size: 30px;
         }
         .nav_list.active{
-            
             display: flex;
-            z-index: 100;
-           max-width: 1000px;
-           height: 100%;
-          
+            
+            transform: translateX(1000px);
+            transition: 0.5s;
         }
         .product{
             height: 120vh;
@@ -738,7 +733,9 @@ text-align: center;
         .composition_charact:hover .charact_text1 {
             font-size: 25px;
         }
-    }
+        
+    
+
     .composition_charact:hover .charact_text2{
         font-size: 25px;
     }
@@ -766,9 +763,7 @@ text-align: center;
     .reviews_blog{
         flex-direction: column;
     }
-    .reviews_blog_name{
 
-    }
     .reviews_blog_info{
         width: 400px;
         text-align: center;
@@ -791,4 +786,4 @@ text-align: center;
     .order_wrapper{
         flex-direction: column;
     }
-}
+    }
