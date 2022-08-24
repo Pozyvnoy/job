@@ -645,8 +645,8 @@ text-align: center;
         .nav_list.active{
             display: flex;
             
-            transform: translateX(1000px);
-            transition: 0.5s;
+            left: 1000px;
+           
         }
         .product{
             height: 120vh;
