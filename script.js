@@ -11,27 +11,19 @@ const swiper = new Swiper('#swiper1', {
       slideShadows: false,
 
     },
+    breakpoints: {
+        // when window width is >= 320px
+        320: {
+            effect: 'slide',
+              direction: 'horizontal', 
+              slidesPerView:1,
+              gap:100,
+        },
+    },
     direction: 'vertical',
     slidesPerView:2,
     loop:true,
     centeredSlides: true,
-    navigation: {
-    nextEl: '#reviews_arrow2',
-    prevEl: '#reviews_arrow1',
-    },
-    breakpoints: {
-
-        320: {
-            direction:'horizontal',
-            slidesPerView: 1,
-        
-        },
-        
-        640: {
-            direction:'vertical',
-        slidesPerView: 2,
-        },
-    }   
 });
 
 
