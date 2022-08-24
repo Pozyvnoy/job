@@ -1,5 +1,5 @@
 const swiper = new Swiper('#swiper1', {
-    
+
     effect: 'coverflow',
     grabCursor: true,
     slidesPerView: 'auto',
@@ -11,19 +11,11 @@ const swiper = new Swiper('#swiper1', {
       slideShadows: false,
 
     },
-    breakpoints: {
-        // when window width is >= 320px
-        320: {
-            effect: 'slide',
-              direction: 'horizontal', 
-              slidesPerView:1,
-              gap:100,
-        },
-    },
     direction: 'vertical',
     slidesPerView:2,
     loop:true,
     centeredSlides: true,
+  
 });
 
 
@@ -101,7 +93,7 @@ window.addEventListener('scroll',function(){
     let value = this.window.scrollY;
 
     chat.style.right = value *0.3 + 'px';
-    hand.style.left = value *0.3 + 'px';
+
     
 })
 

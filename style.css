@@ -602,6 +602,9 @@ text-align: center;
         .container{
             width: 720px;
         }
+        .product{
+            height: 1200px;
+        }
         .nav_wrapper{
             gap: 200px;
         }
@@ -614,6 +617,9 @@ text-align: center;
         }
         .nav_burger:hover{
             border: none;
+        }
+        .nav_burger:active{
+            background-color: transparent;
         }
         .nav_burger{
             outline: none;
@@ -643,17 +649,20 @@ text-align: center;
             font-size: 30px;
         }
         .nav_list.active{
-            display: flex;
-            
-            left: 1000px;
-           
+display: none;
+            transition: 0.5s;
+            right: 1000px;
+          
         }
         .product{
-            height: 120vh;
+            height: auto;
         }
         .product_item_wrapper{
             width: 310px;
             height: 970px;
+        }
+        .composition{
+            height:1200px   ;
         }
         .charact_item{
             font-size: 25px;
@@ -679,7 +688,7 @@ text-align: center;
             height: 100vh;
         }
         #chat{
-            transform: translateY(850px) translateX(200px) rotate(10deg);   
+            transform: translateY(450px) translateX(200px) rotate(10deg);   
         }
      #submit_button{
         font-size: 25px;
@@ -696,6 +705,9 @@ text-align: center;
       }
         .form_wrap{
             margin-left: 100px;
+        }
+        .order{
+            height: 1200px;
         }
     } 
 
