@@ -104,10 +104,22 @@ document.addEventListener("DOMContentLoaded", function(){
 // paralax
 
 let chat = document.getElementById("chat")
+let hand = document.getElementById("hand")
 window.addEventListener('scroll',function(){
     let value = this.window.scrollY;
 
     chat.style.right = value *0.3 + 'px';
- 
+    hand.style.left = value *0.3 + 'px';
     
+})
+
+// NAV
+let navBurger = document.querySelector('.nav_burger')
+let navList = document.querySelector('.nav_list')
+navBurger.addEventListener('click',function(){
+    navList.classList.toggle('active')
+
+})
+window.addEventListener('scroll' ,function(){
+    navList.classList.remove('active')
 })
